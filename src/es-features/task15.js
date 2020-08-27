@@ -15,5 +15,6 @@ export function task15Old(arr) {
 // Напишите реализацию функции task15Old на ESnext ниже этого комментария.
 // При желании, можете использовать стрелочную функцию, вместо обычной
 
-export function task15New() {
+export function task15New(arr) {
+  return Object.fromEntries(arr);
 }
