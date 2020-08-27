@@ -14,3 +14,34 @@
  * console.log(any([0, 0, 1, 0])); -> true
  * console.log(any([0, 0, 0, 0])); -> false
  */
+export function any(array, func = el => Boolean(el)) {
+    return array.some(func);
+  }
+
+//РЕШЕНИЕ 2
+
+  /*function any (arr, cb) {
+if(!cb) {
+return true
+}
+return arr.reduce((acc, val) => {
+if(acc){
+return acc;
+}
+if(cb(val)){
+return true
+}
+return acc;
+}, false)
+}*/
+
+//РЕШЕНИЕ 3
+
+/*let arr = new Array(4);
+let result = arr.some(function(num) {
+  return num > 0;
+});
+}
+console.log(any([0, 1, 2, 0], x => x >= 2));
+console.log(any([0, 0, 1, 0]));
+console.log(any([0, 0, 0, 0])); */
