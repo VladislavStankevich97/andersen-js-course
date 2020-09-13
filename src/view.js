@@ -39,11 +39,6 @@ class View extends EventEmitter {
     else alert('Невозможно создать рецепт');
   }
 
-  deleteHandler(ev) {
-    ev.preventDefault();
-    this.emit('delete', ev);
-  }
-
   addEventsListener() {
     this.buttonItem.addEventListener('click', this.craftItemHandler.bind(this));
     this.trashcan.addEventListener('drop', this.deleteHandler.bind(this));
