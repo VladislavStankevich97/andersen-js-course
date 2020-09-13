@@ -16,6 +16,7 @@ class View extends EventEmitter {
   }
 
   craftItem(item) {
+    // eslint-disable-next-line no-alert
     if (item === null) alert('Несоответствие рецепту.');
     else {
       const newItem = createListItem(item);
@@ -28,6 +29,7 @@ class View extends EventEmitter {
     const recipe = document.querySelector('.craftCell p[class = "recipe"]');
     const items = document.querySelectorAll('.craftCell p[class = "item"]');
     if (recipe && items) this.emit('craftItem', { recipe, items });
+    // eslint-disable-next-line no-alert
     else alert('Невозможно создать предмет');
   }
 
@@ -36,6 +38,7 @@ class View extends EventEmitter {
     const itemName = this.inputItem.value;
     const items = document.querySelectorAll('.craftCell p[class = "item"]');
     if (recipeName && items) this.emit('craftRecipe', { recipeName, itemName, items });
+    // eslint-disable-next-line no-alert
     else alert('Невозможно создать рецепт');
   }
 
@@ -43,11 +46,6 @@ class View extends EventEmitter {
     ev.preventDefault();
     this.emit('delete', ev);
   }
-
-  /* deleteElement(ev) {
-    const data = ev.dataTransfer.getData('text');
-    document.getElementById(data).parentElement.removeChild(document.getElementById(data));
-  } */
 
   addEventsListener() {
     this.buttonItem.addEventListener('click', this.craftItemHandler.bind(this));
