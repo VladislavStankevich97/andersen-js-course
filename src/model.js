@@ -1,5 +1,5 @@
 import { EventEmitter } from './EventEmitter';
-import Recipe from './recipe';
+import Recipe from './Recipe';
 import Item from './Item';
 
 class Model extends EventEmitter {
