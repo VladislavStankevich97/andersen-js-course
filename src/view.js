@@ -5,9 +5,6 @@ class View extends EventEmitter {
   constructor() {
     super();
     this.buttonItem = document.getElementById('buttonItem');
-    this.buttonRepice = document.getElementById('buttonRepice');
-    this.inputRecipe = document.getElementById('inputRecipeName');
-    this.inputItem = document.getElementById('inputItemName');
     this.listItems = document.getElementsByClassName('itemCell');
     this.listRecipes = document.getElementsByClassName('recipeCell');
     this.listCraft = document.getElementsByClassName('craftCell');
@@ -49,7 +46,6 @@ class View extends EventEmitter {
 
   addEventsListener() {
     this.buttonItem.addEventListener('click', this.craftItemHandler.bind(this));
-    this.buttonRepice.addEventListener('click', this.craftRecipeHandler.bind(this));
     this.trashcan.addEventListener('drop', this.deleteHandler.bind(this));
     this.trashcan.addEventListener('dragover', allowDrop);
     Array.from(this.listItems).forEach(cell => {
