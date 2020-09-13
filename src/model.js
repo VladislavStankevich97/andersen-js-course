@@ -73,17 +73,6 @@ class Model extends EventEmitter {
     return this.items.find(item => item.id === id);
   }
 
-  /* deleteElement(ev) {
-    const data = ev.dataTransfer.getData('text');
-    if (data.replace(/[^a-z]/g, '') === 'item') {
-      const itemsId = this.items.map(value => value.id);
-      this.items.splice(itemsId.indexOf(data), 1);
-    } else {
-      const recipesId = this.recipes.map(value => value.id);
-      this.recipes.splice(recipesId.indexOf(data), 1);
-    }
-  } */
-
   craftItem(recipeId, ingredients = []) {
     let result = null;
     const recipe = this.getRecipe(recipeId);
