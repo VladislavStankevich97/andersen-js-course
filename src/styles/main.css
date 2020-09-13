@@ -12,40 +12,32 @@ table {
 .container {
   height: 218px;
   width: 100%;
-  
-
-  /*  overflow: scroll;  */
 }
 .craftCell {
   float: center;
- /* width: 200px;  */
- 
-  /* height: 15px;  */
-
   width: 250px;
-  margin: 10px;
-  padding-left: 30px;
-  padding: 30px;
-  /* border: 5px solid burlywood; */
+  text-align: center;
+  padding: 20px;
+  border: 20px solid burlywood;
+  background-color:#fff;
 }
 .itemCell {
   float: center;
   width: 100%;
-  
   text-align: center;
- 
   padding: 20px;
+  border: 5px solid burlywood;
+  background-color:#fff;
   
 }
+
 .recipeCell {
   float: center;
-  width: 210px;
-  
- /* height: 15px;  */
-  margin: 10px;
-  padding: 5px;
+  width: 100%;
   text-align: center;
- 
+  padding: 20px;
+  border: 5px solid burlywood;
+  background-color:#fff;
 }
 .recipe {
   display: inline-block; 
@@ -61,10 +53,6 @@ table {
   font-size: 11px;
   padding: 5px 10px;
   border: 1px solid #333;
- }
- p {
-  position: relative; 
-  bottom: 100%; 
  }
 
 
