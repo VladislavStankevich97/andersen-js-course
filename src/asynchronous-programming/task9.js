@@ -1,4 +1,4 @@
-export default async function task9() {
+export async function task9() {
   const result = await asyncBar();
   console.log(result);
 }
