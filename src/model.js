@@ -86,13 +86,5 @@ class Model extends EventEmitter {
     }
     return result;
   }
-
-  craftRecipe(recipeName, itemName, ingredients = []) {
-    let result = this.items.find(item => item.name === itemName);
-    if (result === undefined) result = new Item(null, itemName);
-    const newRecipe = new Recipe(`recipe${(this.idCounter += 1)}`, recipeName, ingredients, result);
-    this.recipes.push(newRecipe);
-    return newRecipe;
-  }
 }
 export default Model;
