@@ -4,11 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Andersen JS Course</title>
-  </head>
-  <body>
-    <h1>
-      Andersen JS Course
-    </h1>
-  </body>
+    <title>Andersen</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+    <body style="background-attachment:fixed" topmargin="0">
+    <div class="container">
+    <table border="5" cellpadding="10" align="center">
+      <tr>
+        <td><div class="itemCell"></div></td>
+        <td><div class="itemCell"></div></td>
+        <td><div class="itemCell"></div></td>   
+        <td><div class="itemCell"></div></td>
+        <td><div class="itemCell"></div></td>
+        <td><div class="itemCell"></div></td>
+        <td><div class="itemCell"></div></td>
+      </tr>
+      <tr>
+        <td><div class="itemCell"></div></td>
+        <td><div class="itemCell"></div></td>
+        <td><div class="itemCell"></div></td>
+        <td><div class="itemCell"></div></td>
+        <td><div class="itemCell"></div></td>
+        <td><div class="itemCell"></div></td>
+        <td><div class="itemCell"></div></td>
+      </tr>
+    </table>
+</div>
+<table align="left">
+    <tr>
+      <td><img src="Блэндер.webp"></td>
+      <td>
+      <table border="5" cellpadding="2  ">
+          <tr>
+            <td><div class="craftCell"></div></td>
+            <td><div class="craftCell"></div></td>
+            <td><div class="craftCell"></div></td>
+          </tr>
+          <tr>
+            <td><div class="craftCell"></div></td>
+            <td><div class="craftCell"></div></td>
+            <td><div class="craftCell"></div></td>
+          </tr>
+        </table></td>
+    <td>
+    <div> 
+    <p><font size="5"><button id=buttonItem>Приготовить коктейль</button></font></p>
+   </div>
+  </td>
+    </tr>
+</table>
+ <div class="container">
+    <table border="5" cellpadding="10"  align="center">
+  <tr>
+    <td><div class="recipeCell"></div></td>
+    <td><div class="recipeCell"></div></td>
+    <td><div class="recipeCell"></div></td>
+  </tr>
+  <tr>
+    
+    <td><div class="recipeCell"></div></td>
+    <td><div class="recipeCell"></div></td>
+    <td><div class="recipeCell"></div></td>
+  </tr>
+  </table>
+<div id="sidebar">
+    <div class="toggle-btn" onclick="openMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul>
+        <li>Меню помощи</li>
+        <li><a class="link" href="#my-modal" data-toggle="modal">Рецепты</a></li>
+    </ul>
+</div>
+<div class="modal fade" id="my-modal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          </button>
+          <h4 class="modal-title"><font size="7">Книга рецептов</font></h4>
+        </div>
+        <div class="modal-body">
+          <p>Привет, <font color="red" >дорогой любитель коктейлей</font> сейчас я научу тебя готовить разные виды этого напитка.
+            Если ты готов, то можем приступать.<br><font color="red" >1)</font>Коктейль "Тропический": молоко, банан, апельсин, сахар, лёд.
+            <br><font color="red" >2)</font>Коктейль "Мохито" безалкогольный: лайм, лимонад, сахар, мята, лёд.
+            <br><font color="red" >3)</font>Коктейль "Айсберг в океане": мороженое, молоко, вишнёвый сироп, желток.
+            <br><font color="red" >4)</font>Холодный банановый латте: банан, молоко, вода, шоколад, лёд.
+            <br><font color="red" >5)</font>Арбузный лимонад: арбуз, лайм, мята, лимонад, лёд.
+            <br><font color="red" >6)</font>Мятное молоко: молоко, сахар, мята.
+            <br><font size="5" color="black"> Всё поместить в блэндер и нажать на кнопочку. Коктейль будет готов в ту же минуту.</font></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Тык</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
+    function openMenu() {
+        document.getElementById("sidebar").classList.toggle("active");
+    }
+</script>
+</body>
 </html>
