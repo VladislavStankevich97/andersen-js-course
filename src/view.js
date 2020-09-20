@@ -62,13 +62,6 @@ class View extends EventEmitter {
     });
   }
 
-  craftRecipe(recipe) {
-    const newItem = createListItem(recipe);
-    newItem.className = 'recipe';
-    newItem.setAttribute('info', recipe.ingredients.toString());
-    FindFreeCell(this.listRecipes).appendChild(newItem);
-  }
-
   show(items, recipes) {
     items.forEach(item => {
       const listItem = createListItem(item);
