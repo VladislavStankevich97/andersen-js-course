@@ -1,0 +1,23 @@
+<div id="wrapper">
+    <div id="content">
+        <div class="card">
+            <div class="container">
+                <h1 style="text-align: center">Телефонный справочник</h1>
+            </div>
+        </div>
+        {{# each items }}
+        <div class="card">
+            <div class="container">
+                <div class="name" id="name">
+                    <p>Имя: {{ this.name }}</p>
+                </div>
+                <div class="phone" id="phone">
+                    <p>Номер телефона: {{ this.phone }}</p>
+                </div>
+                <i><a style="color: black" href="/delete?id={{this.id}}">Удалить</a></i> /
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
